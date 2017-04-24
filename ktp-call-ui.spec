@@ -1,6 +1,6 @@
 Summary:	UI for KDE Telepathy calls
 Name:		ktp-call-ui
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -71,7 +71,7 @@ BuildRequires:	pkgconfig(shared-mime-info)
 %description
 UI for KDE Telepathy calls
 
-%files
+%files -f ktp-call-ui.lang
 %{_bindir}/ktp-dialout-ui
 %{_libdir}/libexec/ktp-call-ui
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.KTp.CallUi.service
@@ -88,3 +88,4 @@ UI for KDE Telepathy calls
 
 %install
 %ninja_install -C build
+%find_lang ktp-call-ui
