@@ -1,6 +1,6 @@
 Summary:	UI for KDE Telepathy calls
 Name:		ktp-call-ui
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Epoch:		1
 License:	GPLv2+
